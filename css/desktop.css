@@ -74,4 +74,16 @@
   }
 
   /* --- section two END --- */
+
+  /* --- section three --- */
+
+  .s-three {
+    padding: 120px 0;
+  }
+
+  .s-three-item:nth-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+
+  /* --- section three END --- */
 }
