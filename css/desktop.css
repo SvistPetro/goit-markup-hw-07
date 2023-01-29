@@ -31,7 +31,7 @@
     max-width: 264px;
   }
 
-  .s-one-item:nth-child(-n + 2) {
+  .s-one-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 0;
   }
 
@@ -81,9 +81,46 @@
     padding: 120px 0;
   }
 
-  .s-three-item:nth-child(-n + 2) {
-    margin-bottom: 0px;
+  /* --- section three END --- */
+
+  /* --- section four --- */
+
+  .s-four {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
-  /* --- section three END --- */
+  .s-four-item {
+    width: 168px;
+  }
+
+  /* --- section four END --- */
+
+  /* ------------------ FOOTER ------------------- */
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-logo-text {
+    margin-left: 0px;
+  }
+
+  .footer-text {
+    margin: 0;
+  }
+
+  .footer-soc {
+    margin-left: 120px;
+  }
+
+  .footer-soc-list {
+    margin: 0;
+  }
+
+  .footer-subscribe {
+    margin-left: 80px;
+  }
+
+  /* ------------------ FOOTER END ------------------- */
 }
