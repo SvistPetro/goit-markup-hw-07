@@ -209,8 +209,8 @@ a {
 /* --- hero --- */
 
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin: auto;
   text-align: center;
 
@@ -218,25 +218,46 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-img.jpg);
+    url(../images/hero-img-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440px 600px;
+  flex-grow: 1;
+  background-size: cover;
+}
 
-  /* background-color: var(--hero-background-color); */
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-img-mob-2x.jpg);
+  }
 }
 
 .hero-title {
-  max-width: 496px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
+
   color: var(--hero-title-color);
+}
+
+@media screen and (max-width: 767px) {
+  .hero-title {
+    max-width: 320px;
+  }
 }
 
 .hero-btn {
@@ -259,6 +280,8 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--btn-active-color);
 }
+
+/* --- hero END --- */
 
 /* --- section one --- */
 
@@ -664,9 +687,9 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 408px;
-  min-height: 576px;
-  padding: 72px 24px 24px;
+  width: 392px;
+  min-height: 586px;
+  padding: 72px 16px 24px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -699,7 +722,7 @@ a {
 
 .s-modal-text {
   text-align: center;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 
   font-style: normal;
   font-weight: 500;
@@ -817,7 +840,7 @@ a {
 
 .checkbox-icon:checked + .checkbox-text span {
   background-color: var(--btn-active-color);
-  /* OCEAN */
+
   border: 1.25px solid var(--btn-active-color);
   border-radius: 2px;
   fill: var(--cloud-color);
@@ -880,6 +903,8 @@ a {
 .s-backdrop.is-hidden .s-modal {
   transform: translate(-50%, -50%) scale(0.8);
 }
+
+/* --- Modal END --- */
 
 /* ------------------ PORTFOLIO MAIN ------------------ */
 

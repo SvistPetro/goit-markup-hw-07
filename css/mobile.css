@@ -2,4 +2,12 @@
   .container {
     width: 428px;
   }
+
+  /* --- hero --- */
+
+  .hero {
+    background-size: 428px 432px;
+  }
+
+  /* --- hero END --- */
 }
