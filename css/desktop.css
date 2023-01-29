@@ -5,6 +5,31 @@
     padding-right: 15px;
   }
 
+  /* ------------------ HEADER ------------------ */
+
+  .header-list {
+    margin-left: 76px;
+  }
+
+  .header-list-link {
+    padding-bottom: 28px;
+  }
+
+  .header-contact {
+    gap: 40px;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .header-contact-link {
+    padding: 24px 0 28px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* ------------------ HEADER END ------------------ */
+
   /* --- hero --- */
 
   .hero {
