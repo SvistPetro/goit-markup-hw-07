@@ -116,6 +116,7 @@ a {
 
 .header-box {
   display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -136,13 +137,26 @@ a {
   color: var(--logo-color-web);
 }
 
-.header-contact {
-  display: none;
-}
-
+.header-contact,
 .header-list {
   display: none;
 }
+
+/* --- Mobile menu --- */
+
+.menu-open {
+  width: 32px;
+  height: 22px;
+  display: inline-flex;
+  margin-left: auto;
+  background-color: transparent;
+}
+
+.menu-open-icon {
+  stroke: var(--navy-blue-color);
+}
+
+/* --- Mobile menu END --- */
 
 /* ------------------ HEADER END ------------------ */
 

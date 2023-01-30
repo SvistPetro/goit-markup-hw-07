@@ -70,6 +70,14 @@
     color: var(--iris-color);
   }
 
+  /* --- Mobile menu --- */
+
+  .menu-open {
+    display: none;
+  }
+
+  /* --- Mobile menu END --- */
+
   /* ------------------ HEADER END ------------------ */
 
   /* --- hero --- */
