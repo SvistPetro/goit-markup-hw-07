@@ -172,7 +172,7 @@ a {
   overflow: auto;
 
   background-color: var(--hero-title-color);
-  
+
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
@@ -212,7 +212,7 @@ a {
 }
 
 .menu-list-link {
-  display: block;
+  display: inline-block;
   margin-right: auto;
   margin-bottom: 40px;
   font-weight: 700;
@@ -238,7 +238,7 @@ a {
   line-height: 1.11;
   text-transform: capitalize;
 
-  color: var(--btn-color)
+  color: var(--btn-color);
 }
 
 .menu-mail-link {
@@ -247,22 +247,20 @@ a {
 
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.20;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--slate-color)
+  color: var(--slate-color);
 }
 
 .menu-soc-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 56px;;
+  gap: 56px;
 }
 
 .menu-soc-item {
   width: 40px;
   height: 40px;
-
-
 }
 
 .menu-soc-link {
@@ -286,6 +284,12 @@ a {
   background-color: var(--btn-active-color);
 }
 
+.menu-list-link:hover,
+.menu-list-link:focus,
+.menu-mail-link:hover,
+.menu-mail-link:focus {
+  color: var(--iris-color);
+}
 
 /* --- Mobile menu END --- */
 
