@@ -105,6 +105,10 @@ a {
   overflow: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* ------------------ HEADER ------------------ */
 
 .header {
@@ -155,6 +159,133 @@ a {
 .menu-open-icon {
   stroke: var(--navy-blue-color);
 }
+
+.menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+
+  background-color: var(--hero-title-color);
+  
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  scale: 1;
+
+  transition: opacity var(--modal), visibility var(--modal), scale var(--modal);
+}
+
+.menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  scale: 0.8;
+}
+
+.menu-close {
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cornflower-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.menu-close:hover,
+.menu-close:focus {
+  background: var(--btn-active-color);
+  fill: var(--btn-name-color);
+  border: none;
+}
+
+.menu-list {
+  display: block;
+}
+
+.menu-list-link {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: var(--navy-blue-color);
+  transition: color var(--transition);
+}
+
+.current {
+  color: var(--btn-active-color);
+}
+
+.menu-tel-link {
+  display: inline-block;
+  margin-bottom: 40px;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+
+  color: var(--btn-color)
+}
+
+.menu-mail-link {
+  display: inline-block;
+  margin-bottom: 48px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.20;
+  letter-spacing: 0.02em;
+  color: var(--slate-color)
+}
+
+.menu-soc-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;;
+}
+
+.menu-soc-item {
+  width: 40px;
+  height: 40px;
+
+
+}
+
+.menu-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  background-color: var(--iris-color);
+  transition: background-color var(--transition);
+}
+
+.menu-soc-icon {
+  fill: var(--logo-color-studio-white);
+}
+
+.menu-soc-link:hover,
+.menu-soc-link:focus {
+  background-color: var(--btn-active-color);
+}
+
 
 /* --- Mobile menu END --- */
 
