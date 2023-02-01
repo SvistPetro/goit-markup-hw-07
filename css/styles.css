@@ -547,18 +547,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 72px 16px;
 }
 
 .s-four-item {
   width: calc((100% - 16px) / 2);
   height: 88px;
-}
-
-@media screen and (max-width: 767px) {
-  .s-four-item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 56px;
-  }
 }
 
 .s-four-link {
@@ -607,6 +601,7 @@ a {
 
 .footer-logo-text {
   display: block;
+  padding-bottom: 72px;
 }
 
 .footer-logo {
@@ -635,13 +630,16 @@ a {
   max-width: 268px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 72px;
 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 
   color: var(--cornflower-color);
+}
+
+.footer-soc {
+  padding-bottom: 72px;
 }
 
 .footer-soc-text,
@@ -662,7 +660,6 @@ a {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .footer-soc-item {

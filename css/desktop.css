@@ -162,6 +162,7 @@
 
   .footer-logo-text {
     margin-left: 0px;
+    padding: 0;
   }
 
   .footer-text {
@@ -170,6 +171,7 @@
 
   .footer-soc {
     margin-left: 120px;
+    padding: 0;
   }
 
   .footer-soc-list {
